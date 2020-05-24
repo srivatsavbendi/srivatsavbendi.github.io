@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Tahoma;
-  background-color: black;
+  background-color: #3F0F3F;
 
 }
 
@@ -11,15 +11,51 @@ html, body {
   zoom: 1.0 ;
 }
 
+.sectors{
+	margin-top: 0vh;
+	color: white;
+	padding-top: 2vh;
+	padding-bottom: 50vh;
+	padding-right: 10vh;
+	padding-left: 10vh;
+	margin-bottom: 2vh;
+  	border-radius: 3vw;
+}
+
+.textView{
+	color: white;
+}
+
+.images{
+	color: white;
+    max-width:20%;
+    height: auto;
+    margin-left: 1vw;
+}
+
+.text{
+	color: white;
+	font-size: 1.5vw;
+}
+
+.headers{
+	color: white;
+}
+
+
+
+
+
 #Banner {
     text-align: center;
     background-color: #3F0F3F;
+    margin-bottom: 0vh;
 }
 
 #Title {
     text-align: center;
     background-color: #3F0F3F;
-    padding-top: 1.5vh;
+    padding-top: 2.5vh;
     padding-bottom: 1vh;
     margin-left: 0vw;
     color: white;
@@ -29,8 +65,8 @@ html, body {
     text-align: center;
     background-color: #3F0F3F;
     padding-top: 1vh;
-    padding-bottom: 1.5vh;
-    margin-left: 0vw;
+    padding-bottom: 3vh;
+	margin-bottom: 0vh;
     color: white;
 }
 
@@ -43,7 +79,7 @@ html, body {
 .menuItems{
     background-color: #3F0F3F;
     margin-left: 1vw;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .logos{
@@ -58,6 +94,10 @@ img{
     max-width:2%;
     height:auto;
 
+}
+
+p{
+	color: white;
 }
 
 @media screen and (max-width: 800px) {
@@ -100,8 +140,9 @@ img{
 	.menuItems{
 	    background-color: #3F0F3F;
 	    color: white;
-	    margin-left: 1vw;
-	    font-size: 4vw;
+	    margin-left: 0.5vw;
+	   	margin-right: 0.5vw;
+	    font-size: 3.5vw;
 	}
 
 	.logos{
@@ -109,6 +150,45 @@ img{
 	    color: white;
 	    margin-left: 1vw;
 		vertical-align="bottom"
+		max-width: 10%;
+		height: auto;
 
 	}
+	.sectors{
+	margin-top: 0vh;
+	color: white;
+	padding-top: 2vh;
+	padding-bottom: 5vh;
+	padding-right: 5vh;
+	padding-left: 5vh;
+	margin-bottom: 2vh;
+  	border-radius: 3vw;
+	}
+
+	.textView{
+		color: white;
+	}
+
+	.images{
+		color: white;
+	    max-width:20%;
+	    height: auto;
+	    margin-left: 1vw;
+	}
+
+	.text{
+		color: white;
+		font-size: 2vw;
+	}
+
+	.headers{
+		color: white;
+		font-size: 4vw;
+
+	}
+
+
+
+
+
 }
