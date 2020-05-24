@@ -46,6 +46,7 @@ html, body {
 
 
 
+
 #Banner {
     text-align: center;
     background-color: #3F0F3F;
@@ -104,6 +105,14 @@ p{
   	#Banner, #Title, #Menu, #menuTitle, .logos, .menuItems, img {
     	width: 100%; 
   	}
+  	
+  	html, body {
+		margin: 0;
+		padding: 0;
+		font-family: Tahoma;
+		background-color: #3F0F3F;
+
+	}
 
   	#Banner {
     	text-align: center;
