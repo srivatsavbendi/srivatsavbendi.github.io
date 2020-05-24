@@ -11,27 +11,37 @@ html, body {
   zoom: 1.0 ;
 }
 
+#Banner {
+    text-align: center;
+    background-color: #3F0F3F;
+}
+
+#Title {
+    text-align: center;
+    background-color: #3F0F3F;
+    padding-top: 1.5vh;
+    padding-bottom: 1vh;
+    margin-left: 0vw;
+    color: white;
+}
 
 #Menu {
     text-align: center;
     background-color: #3F0F3F;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
     margin-left: 0vw;
     color: white;
 }
 
 #menuTitle{
 	background-color: #3F0F3F;
-    color: white;
     margin-left: 1vw;
     font-size: 2.5vw;
-
-
+    
 }
 .menuItems{
     background-color: #3F0F3F;
-    color: white;
     margin-left: 1vw;
     font-size: 1.5vw;
 }
@@ -51,24 +61,39 @@ img{
 }
 
 @media screen and (max-width: 400px) {
-  	#menuTitle, .logos, .menuItems, img {
+  	#Banner, #Title, #Menu, #menuTitle, .logos, .menuItems, img {
     	width: 100%; 
   	}
+
+  	#Banner {
+    	text-align: center;
+    	background-color: #3F0F3F;
+	}
+
+  	#Title {
+	    text-align: center;
+	    background-color: #3F0F3F;
+	    padding-top: 1vh;
+	    padding-bottom: 0.5vh;
+	    margin-left: 0vw;
+	    color: white;
+	}	
 
   	#Menu {
 	    text-align: center;
 	    background-color: #3F0F3F;
-	    padding-top: 2vh;
-	    padding-bottom: 2vh;
+	    padding-top: 0vh;
+	    padding-bottom: 1vh;
 	    margin-left: 0vw;
 	    color: white;
 	}
 
 	#menuTitle{
+		text-align: center;
 		background-color: #3F0F3F;
 	    color: white;
 	    margin-left: 1vw;
-	    font-size: 2.5vw;
+	    font-size: 3vw;
 
 
 	}
@@ -76,7 +101,7 @@ img{
 	    background-color: #3F0F3F;
 	    color: white;
 	    margin-left: 1vw;
-	    font-size: 2vw;
+	    font-size: 2.5vw;
 	}
 
 	.logos{
