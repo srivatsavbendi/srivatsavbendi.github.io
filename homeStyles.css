@@ -1,8 +1,9 @@
 html, body {
   margin: 0;
+  height:100%;
   padding: 0;
-  font-family: Tahoma;
-  background-color: #3F0F3F;
+  font-family: sans-serif;
+  background-color: #73e0e9;
 
 }
 
@@ -11,51 +12,233 @@ html, body {
   zoom: 1.0 ;
 }
 
-.sectors{
-	margin-top: 0vh;
-	color: white;
-	padding-top: 2vh;
-	padding-bottom: 50vh;
-	padding-right: 10vh;
-	padding-left: 10vh;
-	margin-bottom: 2vh;
-  	border-radius: 3vw;
+#PEACETitle{
+  color: white;
+  font-size: 1.5vw;
+  margin-left: -5vw;
+  margin-right: 2vw;
+}
+
+#ProjectFutureTitle{
+  color: white;
+  font-size: 2.5vw;
+  margin-left: 2vw;
+  margin-right: 2.5vw;
+
+}
+
+.logos{
+  max-width:2.3%;
+  height:auto;
+}
+
+.roundimage{
+  border-radius:0vw;
+  height:42vh;
+  max-width:100%;
+  border-color: white;
+  border-style: solid;
+  border-width: 0vw;
+  filter: brightness(60%);
+}
+
+.roundimage:hover{
+  border-radius:0vw;
+  height:42vh;
+  max-width:100%;
+  border-color: white;
+  border-style: solid;
+  filter: brightness(42%);
+}
+
+.roundText{
+  border-radius:0vw;
+  height:42vh;
+  max-width:100%;
+  border-color: white;
+  border-style: solid;
+  border-width: 0vw;
+}
+
+.textModes1 {
+  position: absolute;
+  bottom: 19vh;
+  left: 10vw;
+}
+
+.textModes2 {
+  position: absolute;
+  bottom: 18vh;
+  left: 5vw;
+}
+
+.textModes3 {
+  position: absolute;
+  bottom: 18vh;
+  left: 7vw;
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0vw;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 3.5vw;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+#BannerImage{
+  background-image: url("banner99.svg");
+  display:block;
+  height:75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  font-size:0;
+}
+
+.navL{
+  margin-left: 1vw;
+}
+
+.navTrademark{
+  color: black;
+  font-size: 1.6vw;
+  text-align: center;
+}
+
+.navScreen{
+  margin-left: 3vw;
+  display:block;
+}
+
+
+.sector{
+  margin-top: 0vh;
+  color: white;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  padding-right: 10vh;
+  padding-left: 10vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-top: 0vh;
+  border-radius: 0vw;
+  text-align: center;
+  font-size:0;
+}
+
+.sectorMain{
+  background-color: #212121;
+  margin-top: 0vh;
+  color: white;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  padding-right: 10vh;
+  padding-left: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  border-radius: 2vw;
+}
+
+
+.sector1{
+  color: black;
+  padding-top: 8vh;
+  padding-bottom: 0vh;
+  padding-right: 0vh;
+  padding-left: 0vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  border-radius: 0vw;
+}
+
+.sector2{
+  color: black;
+  padding-top: 3vh;
+  padding-bottom: 6vh;
+  padding-right: 0vh;
+  padding-left: 0vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  border-radius: 0vw;
+}
+
+.sector9{
+  margin-top: 0vh;
+  color: white;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-right: 10vh;
+  padding-left: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border-radius: 2vw;
+  text-align: center;
+}
+
+.imageMain{
+  color: white;
+  max-width:100%;
+  height: auto;
+  border-radius: 2vw;
 }
 
 .textView{
-	color: white;
+  background-color: #212121;
+  color: white;
 }
 
 .images{
-	color: white;
-    max-width:20%;
-    height: auto;
-    margin-left: 1vw;
+  color: white;
+  max-width: 21%;
+  height: auto;
+  margin-left: 3vw;
 }
 
 .text{
-	color: white;
-	font-size: 1.5vw;
+  background-color: #212121;
+  color: #212121;
+  font-size: 1.5vw;
 }
+
+.textBlack{
+  background-color: white;
+  color: white;
+  font-size: 1.5vw;
+}
+
 
 .headers{
-	color: white;
+  color: white;
 }
-
-
-
-
 
 
 #Banner {
     text-align: center;
-    background-color: #3F0F3F;
+    background-color: #042f75;
     margin-bottom: 0vh;
 }
 
 #Title {
     text-align: center;
-    background-color: #3F0F3F;
+    background-color: #042f75;
     padding-top: 2.5vh;
     padding-bottom: 1vh;
     margin-left: 0vw;
@@ -64,139 +247,169 @@ html, body {
 
 #Menu {
     text-align: center;
-    background-color: #3F0F3F;
+    background-color: #042f75;
     padding-top: 1vh;
     padding-bottom: 3vh;
-	margin-bottom: 0vh;
+  margin-bottom: 0vh;
     color: white;
 }
 
 #menuTitle{
-	background-color: #3F0F3F;
+  background-color: #042f75;
     margin-left: 1vw;
     font-size: 2.5vw;
 
 }
 .menuItems{
-    background-color: #3F0F3F;
+    background-color: #042f75;
     margin-left: 1vw;
     font-size: 2vw;
 }
 
 .logos{
-    background-color: #3F0F3F;
+    background-color: #042f75;
     color: white;
     margin-left: 1vw;
-	vertical-align="bottom"
+  vertical-align="bottom"
 
 }
 
-img{
-    max-width:2%;
-    height:auto;
-
+#TrademarkSrivatsav{
+  background-color: #042f75;
+  color: white;
+  text-align: center;
+  font-size: 1.5vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
+
 
 p{
-	color: white;
+  color: white;
 }
 
+a{
+  color: white;
+}
 @media screen and (max-width: 800px) {
-  	#Banner, #Title, #Menu, #menuTitle, .logos, .menuItems, img {
-    	width: 100%; 
-  	}
-  	
-  	html, body {
-		margin: 0;
-		padding: 0;
-		font-family: Tahoma;
-		background-color: #3F0F3F;
+    #Banner, #Title, #Menu, #menuTitle, .logos, .menuItems, img {
+      width: 100%; 
+    }
 
-	}
+    html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    background-color: #042f75;
 
-  	#Banner {
-    	text-align: center;
-    	background-color: #3F0F3F;
-	}
+  }
 
-  	#Title {
-	    text-align: center;
-	    background-color: #3F0F3F;
-	    padding-top: 1.5vh;
-	    padding-bottom: 0.5vh;
-	    margin-left: 0vw;
-	    color: white;
-	}	
+  #nav1{
+    color: black;
+    font-size: 3vw;
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+  }
 
-  	#Menu {
-	    text-align: center;
-	    background-color: #3F0F3F;
-	    padding-top: 0vh;
-	    padding-bottom: 1.5vh;
-	    margin-left: 0vw;
-	    color: white;
-	}
+  .nav9{
+    color: black;
+    font-size: 2.2vw;
+    margin-right: 1vw;
 
-	#menuTitle{
-		text-align: center;
-		background-color: #3F0F3F;
-	    color: white;
-	    margin-left: 1vw;
-	    font-size: 5vw;
+  }
 
+  .navTrademark{
+    color: black;
+    font-size: 1.6vw;
+    text-align: center;
+  }
 
-	}
-	.menuItems{
-	    background-color: #3F0F3F;
-	    color: white;
-	    margin-left: 0.5vw;
-	   	margin-right: 0.5vw;
-	    font-size: 3.5vw;
-	}
+  .navL{
+    margin-left: 0.5vw;
+  }
 
-	.logos{
-	    background-color: #3F0F3F;
-	    color: white;
-	    margin-left: 1vw;
-		vertical-align="bottom"
-		max-width: 10%;
-		height: auto;
+  .sectorMain{
+    color: white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 2vw;
+  }
 
-	}
-	.sectors{
-	margin-top: 0vh;
-	color: white;
-	padding-top: 2vh;
-	padding-bottom: 5vh;
-	padding-right: 5vh;
-	padding-left: 5vh;
-	margin-bottom: 2vh;
-  	border-radius: 3vw;
-	}
+  .sector{
+    color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+    border-radius: 2vw;
+  }
 
-	.textView{
-		color: white;
-	}
+  .sectors{
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  padding-right: 3vh;
+  padding-left: 3vh;
+  margin-top: 0vh;
+  margin-bottom: 2vh;
+  border-radius: 3vw;
+  }
 
-	.images{
-		color: white;
-	    max-width:20%;
-	    height: auto;
-	    margin-left: 1vw;
-	}
+  .sector9{
+  margin-top: 0vh;
+  color: white;
+  padding-top: 0vh;
+  padding-bottom: 1vh;
+  padding-right: 10vh;
+  padding-left: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  border-radius: 2vw;
+  text-align: center;
+}
 
-	.text{
-		color: white;
-		font-size: 2vw;
-	}
+  .textView{
+    color: black;
+  }
 
-	.headers{
-		color: white;
-		font-size: 4vw;
+  .images{
+    color: white;
+      max-width:20%;
+      height: auto;
+      margin-left: 2vw;
+  }
 
-	}
+  .text{
+    color: black;
+    font-size: 1.5vw;
+  }
 
+  .headers{
+    color: white;
+    font-size: 4vw;
 
+  }
+
+  #TrademarkSrivatsav{
+    background-color: #042f75;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 0.5vh;
+    padding-bottom: 1vh;
+  }
 
 
 
