@@ -12,24 +12,137 @@ html, body {
   zoom: 1.0 ;
 }
 
-#PEACETitle{
+
+#title{
   color: white;
-  font-size: 1.5vw;
-  margin-left: -5vw;
-  margin-right: 2vw;
+  font-size: 2.5vw;
+  margin-right: 1vw;  
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 #ProjectFutureTitle{
   color: white;
   font-size: 2.5vw;
-  margin-left: 2vw;
-  margin-right: 2.5vw;
+  left: 1vw;  
+  font-family: Verdana, Geneva, sans-serif;
 
 }
+
+#PEACETitle{
+  color: white;
+  font-size: 1.9vw;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+
 .logos{
-  max-width:2.3%;
+  max-width:6%;
   height:auto;
 }
+
+
+.navL{
+  margin-left: 0vw;
+}
+
+
+
+.navTrademark{
+  color: black;
+  font-size: 1.6vw;
+  text-align: center;
+}
+
+.navScreen{
+  margin-left: 3vw;
+  display:block;
+}
+
+.NavSector{
+  color: #212121;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-top: 0vh;
+  border-radius: 0vw;
+  font-size:0;
+  z-index:1; /*Add this*/
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.SectorMain{
+  background:linear-gradient(#3d6170, #264653);
+  padding-top: 25vh;
+  padding-bottom: 15vh;
+  padding-right: 10vh;
+  padding-left: 10vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  border-radius: 0vw;
+  text-align: center;
+  font-size:0;
+}
+
+#DedicatedTitle{
+  color: white;
+  font-size: 3vw;
+  left: 1vw;  
+  font-family: Verdana, Geneva, sans-serif;
+
+}
+
+#DedicatedParagraph{
+  color: #d8dcdc;
+  font-size: 2.1vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button {
+  border: solid;
+  border-color: white;
+  color: white;
+  padding: 1.5vw 2.5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.9vw;
+  margin: 2vw 1vh;
+  cursor: pointer;
+  border-radius: 1vw;
+  background:#264653;
+}
+
+.button:hover {
+  border: solid;
+  border-color: #09C269;
+  color: white;
+  padding: 1.5vw 2.5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.9vw;
+  margin: 2vw 1vh;
+  cursor: pointer;
+  border-radius: 1vw;
+  background:#09C269;
+}
+
+
+
+
+
+
+
 
 .roundimage{
   border-radius:0vw;
@@ -38,6 +151,7 @@ html, body {
   border-color: white;
   border-style: solid;
   border-width: 0vw;
+  border-radius: 1.5vw;
   filter: brightness(60%);
 }
 
@@ -47,6 +161,8 @@ html, body {
   max-width:100%;
   border-color: white;
   border-style: solid;
+  border-radius: 1.5vw;
+  cursor: pointer;
   filter: brightness(42%);
 }
 
@@ -62,25 +178,29 @@ html, body {
 .textModes1 {
   position: absolute;
   bottom: 19vh; 
-  left: 10vw;
+  left: 8vw;
+  cursor: pointer;
 }
 
 .textModes2 {
   position: absolute;
   bottom: 18vh;
-  left: 5vw;
+  left: 3vw;
+  cursor: pointer;
 }
 
 .textModes3 {
   position: absolute;
   bottom: 18vh;
-  left: 7vw;
+  left: 5vw;
+  cursor: pointer;
 }
 
 
 .column {
   float: left;
-  width: 33.3%;
+  width: 29.3%;
+  margin-left: 3vw;
   padding: 0vw;
   position: relative;
   text-align: center;
@@ -92,63 +212,6 @@ html, body {
   clear: both;
   display: table;
 }
-
-
-#BannerImage{
-  background-image: url("books.jpg");
-  filter: brightness(60%);
-  display:block;
-  height:85%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin:0;
-  font-size:0;
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.textModeMain1 {
-  position: absolute;
-  bottom: 42vh; 
-  left: 20vw;
-  font-size: 5vw;
-  color: white;
-}
-
-
-
-.navL{
-  margin-left: 1vw;
-}
-
-.navTrademark{
-  color: black;
-  font-size: 1.6vw;
-  text-align: center;
-}
-
-.navScreen{
-  margin-left: 3vw;
-  display:block;
-}
-
-.sectorMain{
-  margin-top: 0vh;
-  color: white;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
-  padding-right: 10vh;
-  padding-left: 10vh;
-  margin-left: 0vw;
-  margin-right: 0vw;
-  margin-top: 0vh;
-  border-radius: 0vw;
-  text-align: center;
-  font-size:0;
-}
-
 
 .Navsector1{
   color: black;
@@ -219,7 +282,7 @@ html, body {
   color: white;
   float: left;
   width: 49%;
-  height: 80vh;
+  height: 60vh;
   padding: 0vw;
   padding-top: 5vh;
   padding-bottom: 2vh;
@@ -230,7 +293,7 @@ html, body {
   color: black;
   float: left;
   width: 51%;
-  height: 80vh;
+  height: 60vh;
   padding-top: 5vh;
   padding-bottom: 2vh;
   display: flex;
@@ -265,7 +328,9 @@ html, body {
 
 .interestingimages{
   color: white;
-  max-width: 70%;
+  width: 90%;
+  height: 53vh;
+  border-radius: 5vw;
 }
 
 .hisectors{
@@ -306,7 +371,7 @@ p{
 }
 
 a{
-  color: white;
+  color: #73e0e9;
 }
 
 
@@ -437,5 +502,4 @@ a{
 
 
 }
-
 
