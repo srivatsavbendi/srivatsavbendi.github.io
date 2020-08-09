@@ -4,6 +4,7 @@
       <title></title>
       <link rel="stylesheet" href="clubStyles.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+      <script src="elementJS.js"></script>
 	</head>
 
 	<style>
@@ -14,7 +15,7 @@
 	<body>
 
 		<div id=navbar>	
-			<a href="index.html"><span class=title><img id=logo src="logo1.png"></span></a>
+			<a href="index.html"><span class=title><img id=logo src="logo9.png"></span></a>
 			<a href="clubs.html"><span class=title>Clubs</span></a>
 			<span class=title>SAT/ACT</span>
 			<a href="programs.html"><span class=title>Programs</span></a>
@@ -26,77 +27,428 @@
 		</div>
 
 		<div class=mountainsDiv>
-			<img class=mountains src="mountainsminima.jpg">
-		</div>
-
-		<div id=mainDiv>
-			<div class=club>
-				<div class=clubDiv>
-					<div class=clubText>
-						<div class=clubInfo>
-							<span class=clubname>FRC Robotics</span>
-							<span class=clubinfo>Technology, Engineering</span>
-							<span class=clubinfo>Ages 14-18</span>
-							<span class=clubinfo>Expensive</span>
-						</div>
-
-						<div class=clubDescription>
-							<h1>The FIRST Robotics Competition is an international high school robotics competition. Each year, teams of high school students, coaches, and mentors work during a six-week period to build robots capable of competing in that year's game that weigh up to 125 pounds</h1>
-						</div>
-
-					</div>
-					<div class=clubImage>
-						<img class=clubimages src="frc.jpg">
-					</div>
-				</div>
-			</div>		
-
-			<div class=club>
-				<div class=clubDiv>
-					<div class=clubText>
-						<div class=clubInfo>
-							<span class=clubname>Science Olympiad</span>
-							<span class=clubinfo>Science, Mathematics</span>
-							<span class=clubinfo>Ages 10-18</span>
-							<span class=clubinfo>Fair</span>
-						</div>
-
-						<div class=clubDescription>
-							<h1>Science Olympiad is an American team competition in which students compete in 23 events pertaining to various scientific disciplines, including earth science, biology, chemistry, physics, and engineering. Over 7,800 middle school and high school teams from 50 U.S. states compete each year</h1>
-						</div>
-
-					</div>
-					<div class=clubImage>
-						<img class=clubimages src="scienceolympiad.jpg">
-					</div>
-				</div>
-			</div>	
-
-			<div class=club>
-				<div class=clubDiv>
-					<div class=clubText>
-						<div class=clubInfo>
-							<span class=clubname>HOSA</span>
-							<span class=clubinfo>Medical, Health</span>
-							<span class=clubinfo>Ages 14-18</span>
-							<span class=clubinfo>Fair</span>
-						</div>
-
-						<div class=clubDescription>
-							<h1>HOSA – Future Health Professionals, formerly known as Health Occupations Students of America, is an international career and technical student organization endorsed by the U.S. Department of Education and the Health Science Technology Education Division of ACTE.</h1>
-						</div>
-
-					</div>
-					<div class=clubImage>
-						<img class=clubimages src="hosa.jpg">
-					</div>
-				</div>
-			</div>	
-
+			<img class=mountains src="long.svg">
 		</div>
 
 
 
+		
+		<div id="myBtnContainer">
+		  <button class="btn" onclick="filterSelection('all')"> Show All</button>
+		  <button class="btn" onclick="filterSelection('hobby')"> Hobby/Interest</button>
+		  <button class="btn" onclick="filterSelection('subject')"> Subject/Study</button>
+		  <button class="btn" onclick="filterSelection('community')"> Community/Charity</button>
+		  <button class="btn" onclick="filterSelection('stem')"> STEM/Career</button>
+		</div>
+
+
+
+		<div class="container">
+		  	<div class="filterDiv stem">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>DECA</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>DECA is a not-for-profitstudent organization that hosts international competitions for over 200,000 students every year, testing students on their understanding of global finance and the economy, as well as their leadership and managerial skills. </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="deca.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv stem">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>FBLA</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>The Future Business Leaders of America is a national student organization that aims tp build the entrepenurs and leaders of tomorrow. With over 200,000 members and a concrete national structure, FBLA works to inspire and prepares students to become community-minded business leaders in a global society with their career and technical competitive events.  </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="fbla.png">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv stem">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>TSA</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>The Technology Student Association is a national student organization created to develop student's skills in science, technology, engineering, and mathematics as well as business education. TSA aims to develop leadership, academic, and business management skills in the workplace among students and leaders within the community. TSA hosts multiple regional, state, and national competitions for hundreds of thousands of students every year.  </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="tsa.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv stem">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Model UN</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>Model United Nations, also known as Model UN or MUN, is an educational simulation and/or academic activity in which students can learn about diplomacy, international relations, and the United Nations. </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="modelun.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv hobby">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Book Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>If you enjoy reading but never know what to read or simply want to challenge yourself and dive into more interesting or complex literature, this club is for you. Generally, a book club is structured so that a large group of people read the same book and meet regularly to discuss the book and further their understanding of the text, but these clubs can also be structured more loosely where individuals read their own books and simply give each other recommendations or talk about books they've already read, </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="bookclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv hobby">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Political Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>A political club is an organization where generally like-minded people can discuss and debate political issues and their government's stance on these issues. Political clubs generally consist of members from the same party but can have people with a diverse range of stances. </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="politicalclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="filterDiv hobby">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Comic Book Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>Interested in reading and discussing comic books and graphic novels with friends? Well a comic book club may be the right thing for you. Comic book clubs, generally located in places with access to comic book stores, are great ways to read comic books about your favorite characters with your friends, while also engaging in deep discussions and debates about these stories. </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="comicbookclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="filterDiv hobby">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Foreign Language Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>If you are interested in learning a new language or experiencing the culture of a particular group of people from a foreign country, this is the club for you. If a popular language like French, Spanish, Japanese, or German is not taught at your school, consider joining a foreign language club where you can learn to speak and write in these languages and communicate with others who are learning along with you.</h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="languageclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="filterDiv hobby">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Photography Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>This is a club for individuals interested in learning about photography, the principles and techniques that professional photographers use, and the utilization of editing software to touch up these photos. Whether you've never picked up a camera before or you've breathtaking pictures of natural features, everyone can learn from each other's work at a Photography club. All you need is a camera and the interest to go out and explore! </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="photographyclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="filterDiv hobby">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Video Tech Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>This club is for those interested in producing their own video creations. In this club, members learn various techniques and tricks of filming, editing, and publishing videos for various purposes. Many Video Tech clubs even publish their videos online so people outside of the club can see their creations. </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="videotechclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv hobby">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Film Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>Film clubs are common all around the world for people of all ages. Members of these clubs are individuals who not only have an interest in watching films, but analyzing them, discussing the techniques and work that went to creating them, and debating the proper rankings and comparison of different films.  </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="filmclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv subject">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Competitive Mathematics Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>If you are skilled in quickly solving complex math problems and memorizing tons of equations and theorems, this is the club for you. Of course, anyone can join a competitive math club but this club is generally meant for those who are really good at math and can learn and solve problems quickly in a stressful environment. There are many math competitions that students in these clubs can register for like AIME, AMC, and the National Math League, and many of these clubs like to have students form teams and train over a course of a couple of months. </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="competitivemathclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv subject">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Mathematics Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>Mathematics club members are people that have an interest for learning mathematics principles and theorems to improve their knowledge of the mathematical world. Math clubs can also be used as platforms for peers to gather and help each other out with their math homework, tests or other school work, generally led by a math teacher. </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="mathclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv subject">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Ecology and Botany Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>This club is generally for those with a passion and interest to understand and learn more about the natural environment, specifically plants and animals. Members of an ecology and/or botany club generally partake in activities like planting seeds and crops, visiting public gardens or greenhouses, participating in discussions and debates about environmental problems, and many more engaging activites.</h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="ecologyclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv subject">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Physics Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>This is a club for those that are always interested in how everything in our universe works and interacts with each other. A physics club is a great way to learn more about the forces, energy, and objects that you interact with everyday, through hands on experiments and group discussions. Physics clubs may bring in professional physicists or physics professors and may even visit large scale physics experiments like observatories or particle colliders.</h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="physicsclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv subject">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Biology and Anatomy Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>Members of a Biology and Anatomy club are students that are interested in the composition of living organisms, mainly animals like us humans. In this club, students will likely learn about the anatomic structure of humans and other living organisms and the physiological processes that drive these organisms. Some clubs may even take students on field trips to museums or hospitals, dissect organisms to learn more about their internal structure, or even inspect medical skeletons. </h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="biologyclub.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv subject">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>History Club</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>The FIRST Robotics Competition is an international high school robotics competition. Each year, teams of high school students, coaches, and mentors work during a six-week period to build robots capable of competing in that year's game that weigh up to 125 pounds</h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="frc.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+		  	<div class="filterDiv stem">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>FRC Robotics</span>
+								<span class=clubinfo>Technology, Engineering</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Expensive</span>
+							</div>
+							<div class=clubDescription>
+								<h1>The FIRST Robotics Competition is an international high school robotics competition. Each year, teams of high school students, coaches, and mentors work during a six-week period to build robots capable of competing in that year's game that weigh up to 125 pounds</h1>
+							</div>
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="frc.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv stem">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>Science Olympiad</span>
+								<span class=clubinfo>Science, Mathematics</span>
+								<span class=clubinfo>Ages 10-18</span>
+								<span class=clubinfo>Fair</span>
+							</div>
+
+							<div class=clubDescription>
+								<h1>Science Olympiad is an American team competition in which students compete in 23 events pertaining to various scientific disciplines, including earth science, biology, chemistry, physics, and engineering. Over 7,800 middle school and high school teams from 50 U.S. states compete each year</h1>
+							</div>
+
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="scienceolympiad.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+
+			<div class="filterDiv stem">
+			  	<div class="club">
+					<div class="clubDiv">
+						<div class=clubText>
+							<div class=clubInfo>
+								<span class=clubname>HOSA</span>
+								<span class=clubinfo>Medical, Health</span>
+								<span class=clubinfo>Ages 14-18</span>
+								<span class=clubinfo>Fair</span>
+							</div>
+
+							<div class=clubDescription>
+								<h1>HOSA – Future Health Professionals, formerly known as Health Occupations Students of America, is an international career and technical student organization endorsed by the U.S. Department of Education and the Health Science Technology Education Division of ACTE.</h1>
+							</div>
+
+						</div>
+						<div class=clubImage>
+							<img class=clubimages src="hosa.jpg">
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+
+			
 
 	</body>
 

@@ -2,11 +2,13 @@ html, body {
   margin: 0;
   height:100%;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #faf5f5;
 }
 
 .mountainsDiv{
+  margin-top: 15vh;
   background-color: #ffffff;
+  box-shadow: 0px 0px 2px 0px #000000;
 }
 .mountains{
   width: 100%;
@@ -32,7 +34,7 @@ html, body {
 }
 
 #logo{
-  width: 6%;
+  width: 9%;
   margin-right: 1%;
   margin-left: 3%;
 }
@@ -91,7 +93,7 @@ html, body {
 
 
 
-#mainDiv{
+.mainDiv{
   color: white;
   padding-top: 5vh;
   padding-bottom: 10vh;
@@ -100,14 +102,15 @@ html, body {
 }
 
 .club{
-  height: 39vh;
+  height: 40vh;
   text-align: center;
   background-color: #ffffff;
   border: solid;
   border-color: black;
   border-radius: 5px;
   border-width: 0.2vw;
-  margin-top: 7vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 
 }
 
@@ -145,9 +148,10 @@ html, body {
   color: black;
   font-size: 0.9vw;
   min-width: 20%;
-  padding: 0.5vw;
+  padding: 0.6vw;
   margin: 0.5vw;
   border: solid;
+  border-width: 0.19vw;
   border-radius: 5px;
   border-color: #0C1C43;
 }
@@ -157,9 +161,10 @@ html, body {
   background-color: #52B788;
   font-size: 0.9vw;
   min-width: 20%;
-  padding: 0.5vw;
+  padding: 0.6vw;
   margin: 0.5vw;
   border: solid;
+  border-width: 0.19vw;
   border-radius: 5px;
   border-color: #0C1C43;
 }
@@ -193,3 +198,78 @@ html, body {
 a{
   text-decoration: none;
 }
+
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  margin-right: 10vh;
+  margin-left: 10vh;
+  display: none; /* Hidden by default */
+}
+
+#myBtnContainer{
+  padding-top: 2vw;
+  padding-bottom: 0vw;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  color: white;
+  cursor: pointer;
+  background-color: #52B788;
+  font-size: 1.3vw;
+  min-width: 15%;
+  padding-top: 0.9vw;
+  padding-bottom: 0.9vw;
+  margin: 0.5vw;
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #52B788;
+  font-size: 1.3vw;
+  min-width: 15%;
+  padding-top: 0.9vw;
+  padding-bottom: 0.9vw;
+  margin: 0.5vw;
+  border: solid;
+  border-radius: 5px;
+  border-color: #124429;
+}
+
+/* Add a dark background to the active button 
+.btn:focus {
+  color: white;
+  cursor: pointer;
+  background-color: #52B788;
+  font-size: 1.05vw;
+  min-width: 10%;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-right: 0.7vw;
+  padding-left: 0.7vw;  
+  margin: 0.5vw;
+  border: solid;
+  border-radius: 5px;
+  border-color: #0C1C43;
+}
+*/
