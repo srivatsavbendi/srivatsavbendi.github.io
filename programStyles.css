@@ -147,6 +147,8 @@ html, body {
   min-width: 20%;
   padding: 0.5vw;
   margin: 0.5vw;
+  position: relative;
+  bottom: 10px;
   border: solid;
   border-radius: 5px;
   border-color: #0C1C43;
@@ -159,6 +161,8 @@ html, body {
   min-width: 20%;
   padding: 0.5vw;
   margin: 0.5vw;
+  position: relative;
+  bottom: 10px;
   border: solid;
   border-radius: 5px;
   border-color: #0C1C43;
