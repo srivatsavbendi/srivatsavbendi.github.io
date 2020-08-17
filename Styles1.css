@@ -258,7 +258,7 @@ a{
 
   .title1{
     color: #EEEEF4;
-    margin-right: 9%;
+    margin-right: 6%;
     font-size: 2vw;
     vertical-align: middle;
     height: 0.5vh;
@@ -279,6 +279,7 @@ a{
     color: white;
     padding: 0.5vh 3vw;
     text-align: center;
+    vertical-align: middle;
     text-decoration: none;
     display: inline-block;
     font-size: 2vw;
@@ -292,6 +293,7 @@ a{
     border-color: white;
     color: white;
     padding: 0.5vh 3vw;
+    vertical-align: middle;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -370,8 +372,8 @@ a{
     font-size: 2vw;
     color: #0D1321;
     text-align: center;
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
 
