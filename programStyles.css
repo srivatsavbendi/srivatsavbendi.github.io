@@ -5,6 +5,11 @@ html, body {
   background-color: #52B788;
 }
 
+@viewport{
+  width: device-width;
+  zoom: 1.0;
+}
+
 .mountainsDiv{
   margin-top: 10vh;
   background-color: #52B788;
@@ -277,3 +282,271 @@ a{
   border-color: #0C1C43;
 }
 */
+
+
+
+@media screen and (max-width: 600px){
+  {
+    width: 100%;
+  }
+  html, body {
+  margin: 0;
+  height:100%;
+  padding: 0;
+  background-color: #52B788;
+  }
+
+  .mountainsDiv{
+    margin-top: 5vh;
+    background-color: #52B788;
+  }
+  .mountains{
+    width: 100%;
+    height: auto;
+  }
+
+  .mountainstext{
+    padding-top: 1vw;
+    padding-bottom: 1vw; 
+    background-color: #ffffff;
+    padding-left: 30vw;
+  }
+
+
+  #navbar{
+    background-color: #0C1C43;
+    padding: 2%;
+    margin: 0%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #logo{
+    width: 13%;
+    margin-right: 2%;
+    margin-left: 3%;
+  }
+
+  .title{
+    color: #EEEEF4;
+    margin-right: 1%;
+    font-size: 2vw;
+    vertical-align: middle;
+    height: 0.5vh;
+  }
+
+  .title1{
+    color: #EEEEF4;
+    margin-right: 6%;
+    font-size: 2vw;
+    vertical-align: middle;
+    height: 0.5vh;
+  }
+
+  #login{
+    color: #EEEEF4;
+    margin-right: 1%;
+    font-size: 2vw;
+    vertical-align: middle;
+    height: 0.5vh;
+  }
+
+  #signup{
+    background-color: #52B788;
+    border: solid;
+    border-color: #52B788;
+    color: white;
+    padding: 0.5vh 3vw;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    border-radius: 6%;
+    margin-right: 3%;
+  }
+
+  #signup:hover{
+    background-color: #52B788;
+    border: solid;
+    border-color: white;
+    color: white;
+    padding: 0.5vh 3vw;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    border-radius: 6%;
+    margin-right: 3%;
+  }
+
+
+  .mainDiv{
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+
+  .club{
+    height: 19vh;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 0.2vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  .clubDiv{
+    color: white;
+    padding-bottom: 1vh;
+    margin-top: 3.5vh;
+    margin-right: 0vw;
+    margin-left: 0vw;
+  }
+
+  .clubText{
+    color: white;
+    float: left;
+    text-align: left;
+    width: 70%;
+    padding-top: 0vh;
+    padding-bottom: 1vh;
+  }
+
+  .clubInfo{
+    color: white;
+    padding-bottom: 0vh;
+    margin-bottom: 0vh;
+    padding-left: 2vw;
+  }
+
+  .clubname{
+    color: black;
+    font-size: 2.6vw;
+    padding-right: 1vw;
+    padding-left: 0.5vw;
+    vertical-align: top;
+  }
+
+  .clubinfo{
+    color: black;
+    font-size: 0.9vw;
+    min-width: 20%;
+    padding: 0.6vw;
+    position: relative;
+    border: solid;
+    border-width: 0.19vw;
+    border-radius: 5px;
+    border-color: #0C1C43;
+  }
+
+  .clubinfo:hover{
+    color: white;
+    background-color: #52B788;
+    font-size: 0.9vw;
+    min-width: 20%;
+    padding: 0.6vw;
+    margin: 0.5vw;
+    position: relative;
+    bottom: 10px;
+    border: solid;
+    border-width: 0.19vw;
+    border-radius: 5px;
+    border-color: #0C1C43;
+  }
+
+
+  .clubDescription{
+    color: black;
+    padding-top: 0vh;
+    padding-bottom: 1vh;
+    font-size: 0.6vw;
+    text-align: left;
+    padding-right: 3vw;
+    padding-left: 3vw;
+  }
+
+
+  .clubImage{
+    color: white;
+    float: left;
+    width: 30%;
+    text-align: center;
+  }
+
+  .clubimages{
+    width: 90%;
+    height: auto;
+    border-radius: 9px;
+  }
+
+
+  a{
+    text-decoration: none;
+  }
+
+
+  .container {
+    overflow: hidden;
+  }
+
+  .filterDiv {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    margin-right: 10vh;
+    margin-left: 10vh;
+    display: none; /* Hidden by default */
+  }
+
+  #myBtnContainer{
+    padding-top: 2vw;
+    padding-bottom: 0vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    text-align: center;
+  }
+
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+
+  /* Style the buttons */
+  .btn {
+    color: white;
+    cursor: pointer;
+    background-color: #52B788;
+    font-size: 1.5vw;
+    min-width: 15%;
+    padding-top: 0.9vw;
+    padding-bottom: 0.9vw;
+    margin: 0.5vw;
+    border: solid;
+    border-radius: 5px;
+    border-color: white;
+  }
+
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #52B788;
+    font-size: 1.3vw;
+    min-width: 15%;
+    padding-top: 0.9vw;
+    padding-bottom: 0.9vw;
+    margin: 0.5vw;
+    border: solid;
+    border-radius: 5px;
+    border-color: #124429;
+  }
+}
