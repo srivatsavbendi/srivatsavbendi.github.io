@@ -217,7 +217,7 @@ html, body {
   font-size: 1.15vw;
   background-color: #3A7CA5;
   border-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   width: 100%;
 }
@@ -232,7 +232,7 @@ html, body {
   font-size: 1.15vw;
   background-color: #F6AE2D;
   border-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   width: 45%;
 }
@@ -248,7 +248,7 @@ html, body {
   font-size: 1.15vw;
   background-color: #FF6B6B;
   border-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   width: 43%;
 }
