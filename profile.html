@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="profileStyles.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+	</head>
+
+	<style>
+		body {
+  			font-family: "comfortaa";
+		}
+	</style>
+	<body>
+
+		<div id=navbar>	
+			<a href="index.html"><span class=title><img id=logo src="Pictures/PROJECTFUTURE1.png"></span></a>
+			<a href="clubs.html"><span class=title>Clubs</span></a>
+			<a href="sat.html"><span class=title>SAT</span></a>
+			<a href="act.html"><span class=title>ACT</span></a>
+			<a href="programs.html"><span class=title>Programs</span></a>
+			<a href="profile.html"><span class=title1>Profile</span></a>
+			<a href="login.html"><button id="login">Account</button></a>
+		</div>
+			
+		<div id="profile">
+			<h1 id="profilename"></h1>
+		</div>
+
+		<div id="bookmarks">
+			<h1 id="bookmarksheader">Bookmarks</h1>
+			<hr id=line>
+			<span><div class=bookmarksdiv id=recycling>
+				<img class=bookmarkpictures src="Pictures/recycle.jpg">
+				<h1 class=bookmarktext>Recycling</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=unicef>
+				<img class=bookmarkpictures src="Pictures/deca.jpg">
+				<h1 class=bookmarktext>UNICEF</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=cancer>
+				<img class=bookmarkpictures src="Pictures/cancer.jpg">
+				<h1 class=bookmarktext>Cancer Awareness</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=habitat>
+				<img class=bookmarkpictures src="Pictures/habitat.jpg">
+				<h1 class=bookmarktext>Habitat For Humanity</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=redcross>
+				<img class=bookmarkpictures src="Pictures/redcross.jpg">
+				<h1 class=bookmarktext>Red Cross</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=amnesty>
+				<img class=bookmarkpictures src="Pictures/amnesty.jpg">
+				<h1 class=bookmarktext>Amnesty International</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=deca>
+				<img class=bookmarkpictures src="Pictures/deca.jpg">
+				<h1 class=bookmarktext>DECA</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=fbla>
+				<img class=bookmarkpictures src="Pictures/fbla.png">
+				<h1 class=bookmarktext>FBLA</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=tsa>
+				<img class=bookmarkpictures src="Pictures/tsa.jpg">
+				<h1 class=bookmarktext>TSA</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=modelun>
+				<img class=bookmarkpictures src="Pictures/modelun.jpg">
+				<h1 class=bookmarktext>Model UN</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=book>
+				<img class=bookmarkpictures src="Pictures/bookclub.jpg">
+				<h1 class=bookmarktext>Book</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=political>
+				<img class=bookmarkpictures src="Pictures/politicalclub.jpg">
+				<h1 class=bookmarktext>Political</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=comicbook>
+				<img class=bookmarkpictures src="Pictures/comicbookclub.jpg">
+				<h1 class=bookmarktext>Comic Book</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=languages>
+				<img class=bookmarkpictures src="Pictures/languageclub.jpg">
+				<h1 class=bookmarktext>Foreign Language</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=photography>
+				<img class=bookmarkpictures src="Pictures/photographyclub.jpg">
+				<h1 class=bookmarktext>Photography</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=videotech>
+				<img class=bookmarkpictures src="Pictures/videotechclub.jpg">
+				<h1 class=bookmarktext>Video Tech</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=film>
+				<img class=bookmarkpictures src="Pictures/filmclub.jpg">
+				<h1 class=bookmarktext>Film</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=competitivemathematics>
+				<img class=bookmarkpictures src="Pictures/competitivemathclub.jpg">
+				<h1 class=bookmarktext>Competitive Mathematics</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=mathematics>
+				<img class=bookmarkpictures src="Pictures/mathclub.jpg">
+				<h1 class=bookmarktext>Mathematics</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=ecology>
+				<img class=bookmarkpictures src="Pictures/ecologyclub.jpg">
+				<h1 class=bookmarktext>Ecology and Botany</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=physics>
+				<img class=bookmarkpictures src="Pictures/physicsclub.jpg">
+				<h1 class=bookmarktext>Physics</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=biology>
+				<img class=bookmarkpictures src="Pictures/biologyclub.jpg">
+				<h1 class=bookmarktext>Biology and Anatomy</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=frcrobotics>
+				<img class=bookmarkpictures src="Pictures/frc.jpg">
+				<h1 class=bookmarktext>FRC Robotics</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=scienceolympiad>
+				<img class=bookmarkpictures src="Pictures/scienceolympiad.jpg">
+				<h1 class=bookmarktext>Science Olympiad</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=hosa>
+				<img class=bookmarkpictures src="Pictures/hosa.jpg">
+				<h1 class=bookmarktext>HOSA</h1>
+			</div></span>
+
+
+			<span><div class=bookmarksdiv id=bbay>
+				<img class=bookmarkpictures src="Pictures/bbay.jpg">
+				<h1 class=bookmarktext>Berkeley B-BAY</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=clark>
+				<img class=bookmarkpictures src="Pictures/clarkscholars.jpg">
+				<h1 class=bookmarktext>Clark Scholars</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=curie>
+				<img class=bookmarkpictures src="Pictures/curieacademy.jpg">
+				<h1 class=bookmarktext>Curie Academy</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=harvard>
+				<img class=bookmarkpictures src="Pictures/harvardpre.png">
+				<h1 class=bookmarktext>Harvard Pre-College</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=hcssim>
+				<img class=bookmarkpictures src="Pictures/hcssim.jpg">
+				<h1 class=bookmarktext>HCSSIM</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=hshsp>
+				<img class=bookmarkpictures src="Pictures/hshsp1.jpg">
+				<h1 class=bookmarktext>HSHSP</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=leadershipseminars>
+				<img class=bookmarkpictures src="Pictures/leadershipseminars.jpg">
+				<h1 class=bookmarktext>Leadership Seminars</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=libarts>
+				<img class=bookmarkpictures src="Pictures/syracuse.jpg">
+				<h1 class=bookmarktext>LibArts and Sciences</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=mites>
+				<img class=bookmarkpictures src="Pictures/mites.jpg">
+				<h1 class=bookmarktext>MITES</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=mmss>
+				<img class=bookmarkpictures src="Pictures/mmss.jpg">
+				<h1 class=bookmarktext>MMSS</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=rehss>
+				<img class=bookmarkpictures src="Pictures/vanderbilt.jpg">
+				<h1 class=bookmarktext>REHSS</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=ross>
+				<img class=bookmarkpictures src="Pictures/rossmathematics.jpg">
+				<h1 class=bookmarktext>Ross Mathematics</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=rsi>
+				<img class=bookmarkpictures src="Pictures/rsi.jpg">
+				<h1 class=bookmarktext>Research Science Institute</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=sams>
+				<img class=bookmarkpictures src="Pictures/sams.png">
+				<h1 class=bookmarktext>SAMS Carnegie</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=sumac>
+				<img class=bookmarkpictures src="Pictures/sumac1.jpg">
+				<h1 class=bookmarktext>SUMAC</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=summerscholars>
+				<img class=bookmarkpictures src="Pictures/summerscholars.jpg">
+				<h1 class=bookmarktext>Summer Scholars</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=tasp>
+				<img class=bookmarkpictures src="Pictures/tasp.jpg">
+				<h1 class=bookmarktext>TASP</h1>
+			</div></span>
+			<span><div class=bookmarksdiv id=yygs>
+				<img class=bookmarkpictures src="Pictures/yygs.jpg">
+				<h1 class=bookmarktext>YYGS</h1>
+			</div></span>
+
+		</div>
+
+		<div id="contact">
+			<h1 id="contactheader">Contact Us</h1>
+			<div id=submitdiv>
+				<input placeholder="First Name" id="firstname">
+				<input placeholder="Last Name" id="lastname">
+				<input placeholder="Please provide us with feedback on how to improve our website!" id="contactus">
+				<button id=submitbutton>Submit!</button>
+			</div>
+		</div>
+
+		<script src="firebase1.js"></script>
+	</body>
+
+</html>

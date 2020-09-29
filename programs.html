@@ -5,7 +5,9 @@
       <link rel="stylesheet" href="programStyles.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="elementJS.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
 	</head>
 
 	<style>
@@ -21,9 +23,8 @@
 			<a href="sat.html"><span class=title>SAT</span></a>
 			<a href="act.html"><span class=title>ACT</span></a>
 			<a href="programs.html"><span class=title>Programs</span></a>
-			<span class=title1>Forum</span>
-			<span id=login>Login</span>
-			<button id="signup">Sign Up</button>
+			<a href="profile.html"><span class=title1>Profile</span></a>
+			<a href="login.html"><button id="login">Account</button></a>
 		</div>
 
 		<div class=mountainsDiv>
@@ -56,6 +57,7 @@
 							<div class=clubDescription>
 								<h1>Berkeley Business for Youth is a highly selective and rigorous program that consists of 50 students engaging in independent research, group business planning and creation, lab assignments and projects, seminars, and activities involving the culture and campus life of the university. Over the course of the program, students are trained to be confident leaders, with real world communication, management, and networking skills.</h1>
 							</div>
+							<button class=bookmarksbutton id=bbay>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://haas.berkeley.edu/business-academy/high-school-entrepreneurship/" target="_blank"><img class=clubimages src="Pictures/bbay.jpg"></a>						
@@ -77,6 +79,7 @@
 							<div class=clubDescription>
 								<h1>The Anson L. Clark Scholars program is an intensive summer research program for high school juniors and seniors that inspires and mentors them to engage in practical research, seminars, STEM classes, field trips, and other fun and rewarding activities. </h1>
 							</div>
+							<button class=bookmarksbutton id=clark>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="http://www.depts.ttu.edu/honors/academicsandenrichment/affiliatedandhighschool/clarks/" target="_blank"><img class=clubimages src="Pictures/clarkscholars.jpg"></a>						
@@ -98,6 +101,7 @@
 							<div class=clubDescription>
 								<h1>The Curie Academy is an interactive summer program for high school junior girls who excel in mathematics and science and are interested in discovering and experiencing new opportunities in the field of engineering. Students engage in field sessions where they learn about various engineering disciplines, collaborate in research/design projects, attend social activities, and participate in engineering competitions. </h1>
 							</div>
+							<button class=bookmarksbutton id=curie>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://sites.coecis.cornell.edu/curieacademy/" target="_blank"><img class=clubimages src="Pictures/curieacademy.jpg"></a>						
@@ -119,6 +123,7 @@
 							<div class=clubDescription>
 								<h1>The Harvard University Pre-College summer program is an immersive and collaborative experience that allows students to pursue their interest with the help of many resources in more than a dozen subjects ranging from physics and mathematics to law and philosophy. Students not only have the opportunity to take these courses but engage in intellectually stimulating activities and participate in workshops led by renowned professors and experts.</h1>
 							</div>
+							<button class=bookmarksbutton id=harvard>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://www.summer.harvard.edu/high-school-programs/pre-college-program" target="_blank"><img class=clubimages src="Pictures/harvardpre.png"></a>						
@@ -140,6 +145,7 @@
 							<div class=clubDescription>
 								<h1>HCSSiM is an intensive college-level mathematics program for motivated high school students interested in the collaboration and discovery of mathematics. During the program, students find patterns, test conjectures, invent definitions, devise proofs, and build theories.</h1>
 							</div>
+							<button class=bookmarksbutton id=hcssim>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://hcssim.org/" target="_blank"><img class=clubimages src="Pictures/hcssim.jpg"></a>						
@@ -161,6 +167,7 @@
 							<div class=clubDescription>
 								<h1>The High School Honors Science, Math and Engineering Program or HSHSP is an intensive summer research program that hopes to provide rising seniors with the opportuntity to learn to conduct research in a university environment with professional mentors and resources. Students not only research in many fields of mathematics and science but also get to experience campus life.</h1>
 							</div>
+							<button class=bookmarksbutton id=hshsp>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://education.msu.edu/hshsp/" target="_blank"><img class=clubimages src="Pictures/hshsp1.jpg"></a>	
@@ -182,6 +189,7 @@
 							<div class=clubDescription>
 								<h1>Leadership in the Business World or LBW is an intense and selective summer program for rising high school juniors and seniors who want an introduction to a undergraduate business and management education. Through a mix of classes, seminars, and activities, students learn 21st century skills like leadership, teamwork, and communication from world class professors and business leaders. </h1>
 							</div>
+							<button class=bookmarksbutton id=lbw>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://globalyouth.wharton.upenn.edu/summer-high-school-programs/leadership-in-the-business-world/" target="_blank"><img class=clubimages src="Pictures/lbw.jpg"></a>						
@@ -203,6 +211,7 @@
 							<div class=clubDescription>
 								<h1>Leadership Seminars is a selective program that hopes to educate and work with academically talented students with leadership and community betterment skills in order to build a better tomorrow. The 90 selected Students learn and develop projects regarding environmental and scientific issues such as Violence, Environmental Policy, and Systematic Racism.</h1>
 							</div>
+							<button class=bookmarksbutton id=leadershipseminars>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://precollege.nd.edu/leadership-seminars/" target="_blank"><img class=clubimages src="Pictures/leadershipseminars.jpg"></a>
@@ -224,6 +233,7 @@
 							<div class=clubDescription>
 								<h1>The Liberal Arts and Sciences summer college program gives high school students the opportunity to engage in two college level courses of their choice. These courses range from calculus to government to life sciences and include lectures, projects, and assignments. Students receive college credit at Syracuse University and can apply as early as 15 years old. </h1>
 							</div>
+							<button class=bookmarksbutton id=libarts>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://summercollege.syr.edu/liberal-arts-sciences/" target="_blank"><img class=clubimages src="Pictures/syracuse.jpg"></a>						
@@ -245,6 +255,7 @@
 							<div class=clubDescription>
 								<h1>Minority Introduction to Engineering and Science or MITES is a rigorous academic enrichment program for rising high school seniors that have a strong academic record and are interested in studying in the fields of science or engineering. Students take multiple courses in life sciences, humanities, and mathematics while also participating in recreational and group activities. </h>
 							</div>
+							<button class=bookmarksbutton id=mites>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://oeop.mit.edu/programs/mites" target="_blank"><img class=clubimages src="Pictures/mites.jpg"></a>						
@@ -266,6 +277,7 @@
 							<div class=clubDescription>
 								<h1>The Michigan Math and Science Scholars program is designed to teach students about the latest developments and research in the study of science. Students take multiple classes and engage in multiple intellectual and recreational activities.</h1>
 							</div>
+							<button class=bookmarksbutton id=mmss>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://sites.lsa.umich.edu/mmss/" target="_blank"><img class=clubimages src="Pictures/mmss.jpg"></a>						
@@ -288,6 +300,7 @@
 							<div class=clubDescription>
 								<h1>Research Experience for High School Students or REHSS is an intensive summer program that centers around the full immersion of students into the campus and research facilities of Vanderbilt university. As one of the most prestigious research institutes in the United States, motivated students experience and are given the opportunity to conduct their own research and take academic courses.</h1>
 							</div>
+							<button class=bookmarksbutton id=rehss>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://www.vanderbilt.edu/cso/rehss/" target="_blank"><img class=clubimages src="Pictures/vanderbilt.jpg"></a>						
@@ -309,6 +322,7 @@
 							<div class=clubDescription>
 								<h1>The Ross Mathematics Program is an intensive summer program aimed at mentoring and inspiring mptivated students to explore their interests in the fields of mathematics and science. Students can take multiple courses revolving around number theory, computation, and mathematical thinking. </h1>
 							</div>
+							<button class=bookmarksbutton id=ross>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://rossprogram.org/" target="_blank"><img class=clubimages src="Pictures/rossmathematics.jpg"></a>						
@@ -330,6 +344,7 @@
 							<div class=clubDescription>
 								<h1>Every summer, this prestigious insitute gathers 80 of the world's most accomplished high school students at the MIT campus for an international science and engineering research program that combines teaching in scientific theory and curriculum with work in scientific research. Participating in intensive STEM classes and working on personalized research projects with the help of renowned professors and mentors, RSI hopes to build a generation of leading scientists. </h1>
 							</div>
+							<button class=bookmarksbutton id=rsi>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://www.cee.org/research-science-institute" target="_blank"><img class=clubimages src="Pictures/rsi.jpg"></a>
@@ -351,6 +366,7 @@
 							<div class=clubDescription>
 								<h1>The Summer Academy for Math and Science is a summer program that allows student to develop deeper understanding of areas of mathematics and science and their relationship with each other. Along with a rigorous STEM curriculum, SAMS' renowned staff of professors and mentors work with and encourage students to develop projects and attend university workshops. </h1>
 							</div>
+							<button class=bookmarksbutton id=sams>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://www.cmu.edu/pre-college/academic-programs/sams.html" target="_blank"><img class=clubimages src="Pictures/sams.png"></a>
@@ -372,6 +388,7 @@
 							<div class=clubDescription>
 								<h1>The Stanford Mathematics Camps is a selective program that leads students through intensive study in the field of mathematics with lectures, research and projects with other students. Students not only learn advanced mathematics principles but also the histroy of mathematics, its applications, and future developments in the study.</h1>
 							</div>
+							<button class=bookmarksbutton id=sumac>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://sumac.spcs.stanford.edu/" target="_blank"><img class=clubimages src="Pictures/sumac1.jpg"></a>						
@@ -393,6 +410,7 @@
 							<div class=clubDescription>
 								<h1>Summer Scholars participants undergo rigourous and rewarding training in one of 24 studies the studebts choose themselves, ranging from Archaeology to Law and from Computing to Photography. While collaborating and working on college level coursework, students also get lots of time to experience college campus life and participate in many social and recreational activities. </h1>
 							</div>
+							<button class=bookmarksbutton id=summerscholars>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://precollege.nd.edu/summer-scholars/" target="_blank"><img class=clubimages src="Pictures/summerscholars.jpg"></a>
@@ -414,6 +432,7 @@
 							<div class=clubDescription>
 								<h1>The Telluride Association Summer Program centers completely around academic seminars lead by university scholars and professors. Every week day, students engage in new material with a seminar and then discuss and analyze the material with engaging activities and projects. Along with the seminars, students attend lectures and participate in many skill-based programs including public speaking and leadership. </h1>
 							</div>
+							<button class=bookmarksbutton id=tasp>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://www.tellurideassociation.org/our-programs/high-school-students/summer-program-juniors-tasp/" target="_blank"><img class=clubimages src="Pictures/tasp.jpg"></a>
@@ -435,6 +454,7 @@
 							<div class=clubDescription>
 								<h1>Yale Young Global Scholars is an academic and leadership program built to create the next generation of leaders by providing them with a curriculum filled with lectures, seminars, breakout sessions, projects, and tons og group discussions and bonding time. With zero course credit or grades, the program hopes to build an environment of zero stress inspiring students to fully embrace their interests in particular field.</h1>
 							</div>
+							<button class=bookmarksbutton id=yygs>Bookmark</button>
 						</div>
 						<div class=clubImage>
 							<a href="https://globalscholars.yale.edu/" target="_blank"><img class=clubimages src="Pictures/yygs.jpg"></a>						
@@ -443,9 +463,8 @@
 				</div>		
 			</div>
 			
-			
-
 		</div>
+      <script src="element1JS.js"></script>
 
 
 	</body>

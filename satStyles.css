@@ -55,45 +55,38 @@ html, body {
 
 .title1{
   color: #EEEEF4;
-  margin-right: 19%;
+  margin-left: 30%;
+  margin-right: 5%;
   font-size: 1.3vw;
   vertical-align: middle;
   height: 0.5vh;
 }
 
 #login{
-  color: #EEEEF4;
-  margin-right: 3%;
-  font-size: 1.3vw;
-  vertical-align: middle;
-  height: 0.5vh;
-}
-
-#signup{
   background-color: #52B788;
   border: solid;
   border-color: #52B788;
   color: white;
-  padding: 1vh 3vw;
+  padding: 1vh 2.5vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.3vw;
-  border-radius: 3%;
+  border-radius: 5px;
   margin-right: 3%;
 }
 
-#signup:hover{
+#login:hover{
   background-color: #52B788;
   border: solid;
   border-color: white;
   color: white;
-  padding: 1.5vh 3vw;
+  padding: 1.5vh 2.5vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.3vw;
-  border-radius: 3%;
+  border-radius: 6%;
   margin-right: 3%;
 }
 
