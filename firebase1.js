@@ -1,18 +1,24 @@
 let profile = document.getElementById("profilename");
+let description = document.getElementById("profiledescription");
+
 var profileusername = sessionStorage.getItem("username");
-profile.innerHTML = profileusername + "'s Portfolio";
+profileusernamelength = profileusername.length;
+if(profileusernamelength>1){
+  profile.innerHTML = profileusername + "'s Portfolio";
+  description.innerHTML = "";
+}
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyBbwuXool1mmjM1Hf4_Jn7eD_fJV9vcXt0",
-  authDomain: "projectfuture-45211.firebaseapp.com",
-  databaseURL: "https://projectfuture-45211.firebaseio.com",
-  projectId: "projectfuture-45211",
-  storageBucket: "projectfuture-45211.appspot.com",
-  messagingSenderId: "313052135851",
-  appId: "1:313052135851:web:12eecf6ba7701ed76f92ee"
+  apiKey: "AIzaSyB94h7P-9hQe5nsYKRR0dJOYO2azUnBpHs",
+  authDomain: "projectfuture-ec96f.firebaseapp.com",
+  databaseURL: "https://projectfuture-ec96f.firebaseio.com",
+  projectId: "projectfuture-ec96f",
+  storageBucket: "projectfuture-ec96f.appspot.com",
+  messagingSenderId: "924271315084",
+  appId: "1:924271315084:web:ee93bee043fafad85693a9",
+  measurementId: "G-5VYLP4YF2F"
 };
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
@@ -52,81 +58,81 @@ ref.once("value").then(function(snapshot) {
     var clubsinfo = snapshot.child("clubs").val();
     console.log(clubsinfo);
 
-   	if(!clubsinfo.includes(":recycling")){
-    	recycling.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":unicef")){
-    	unicef.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":cancer")){
-    	cancer.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":habitat")){
-    	habitat.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":redcross")){
-    	redcross.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":amnesty")){
-    	amnesty.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":deca")){
-    	deca.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":fbla")){
-    	fbla.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":tsa")){
-    	tsa.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":modelun")){
-    	modelun.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":book")){
-    	book.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":poltical")){
-    	political.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":comicbook")){
-    	comicbook.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":languages")){
-    	languages.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":photography")){
-    	photography.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":videotech")){
-    	videotech.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":film")){
-    	film.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":competitivemathematics")){
-    	competitivemathematics.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":mathematics")){
-    	mathematics.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":ecology")){
-    	ecology.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":physics")){
-    	physics.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":biology")){
-    	biology.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":frcrobotics")){
-    	frcrobotics.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":scienceolympiad")){
-    	scienceolympiad.style.display = 'none';
-   	}
-   	if(!clubsinfo.includes(":hosa")){
-    	hosa.style.display = 'none';
-   	}
+    if(!clubsinfo.includes(":recycling")){
+      recycling.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":unicef")){
+      unicef.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":cancer")){
+      cancer.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":habitat")){
+      habitat.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":redcross")){
+      redcross.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":amnesty")){
+      amnesty.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":deca")){
+      deca.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":fbla")){
+      fbla.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":tsa")){
+      tsa.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":modelun")){
+      modelun.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":book")){
+      book.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":poltical")){
+      political.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":comicbook")){
+      comicbook.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":languages")){
+      languages.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":photography")){
+      photography.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":videotech")){
+      videotech.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":film")){
+      film.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":competitivemathematics")){
+      competitivemathematics.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":mathematics")){
+      mathematics.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":ecology")){
+      ecology.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":physics")){
+      physics.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":biology")){
+      biology.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":frcrobotics")){
+      frcrobotics.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":scienceolympiad")){
+      scienceolympiad.style.display = 'none';
+    }
+    if(!clubsinfo.includes(":hosa")){
+      hosa.style.display = 'none';
+    }
 });
 
 
@@ -157,63 +163,63 @@ ref.once("value").then(function(snapshot) {
     var programsinfo = snapshot.child("programs").val();
     console.log(programsinfo);
 
-   	if(!programsinfo.includes(":bbay")){
-    	bbay.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":clark")){
-    	clark.style.display = 'none';
-   	}
+    if(!programsinfo.includes(":bbay")){
+      bbay.style.display = 'none';
+    }
+    if(!programsinfo.includes(":clark")){
+      clark.style.display = 'none';
+    }
 
     if(!programsinfo.includes(":curie")){
       curie.style.display = 'none';
     }
-   	
-   	if(!programsinfo.includes(":harvard")){
-    	harvard.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":hcssim")){
-    	hcssim.style.display = 'none';
-   	}
+    
+    if(!programsinfo.includes(":harvard")){
+      harvard.style.display = 'none';
+    }
+    if(!programsinfo.includes(":hcssim")){
+      hcssim.style.display = 'none';
+    }
 
-   	if(!programsinfo.includes(":hshsp")){
-    	hshsp.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":leadershipseminars")){
-    	leadershipseminars.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":libarts")){
-    	libarts.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":mites")){
-    	mites.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":mmss")){
-    	mmss.style.display = 'none';
-   	}
+    if(!programsinfo.includes(":hshsp")){
+      hshsp.style.display = 'none';
+    }
+    if(!programsinfo.includes(":leadershipseminars")){
+      leadershipseminars.style.display = 'none';
+    }
+    if(!programsinfo.includes(":libarts")){
+      libarts.style.display = 'none';
+    }
+    if(!programsinfo.includes(":mites")){
+      mites.style.display = 'none';
+    }
+    if(!programsinfo.includes(":mmss")){
+      mmss.style.display = 'none';
+    }
 
-   	if(!programsinfo.includes(":rehss")){
-    	rehss.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":ross")){
-    	ross.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":rsi")){
-    	rsi.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":sams")){
-    	sams.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":sumac")){
-    	sumac.style.display = 'none';
-   	}
+    if(!programsinfo.includes(":rehss")){
+      rehss.style.display = 'none';
+    }
+    if(!programsinfo.includes(":ross")){
+      ross.style.display = 'none';
+    }
+    if(!programsinfo.includes(":rsi")){
+      rsi.style.display = 'none';
+    }
+    if(!programsinfo.includes(":sams")){
+      sams.style.display = 'none';
+    }
+    if(!programsinfo.includes(":sumac")){
+      sumac.style.display = 'none';
+    }
 
-   	if(!programsinfo.includes(":summerscholars")){
-    	summerscholars.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":tasp")){
-    	tasp.style.display = 'none';
-   	}
-   	if(!programsinfo.includes(":yygs")){
-    	yygs.style.display = 'none';
-   	}
+    if(!programsinfo.includes(":summerscholars")){
+      summerscholars.style.display = 'none';
+    }
+    if(!programsinfo.includes(":tasp")){
+      tasp.style.display = 'none';
+    }
+    if(!programsinfo.includes(":yygs")){
+      yygs.style.display = 'none';
+    }
 });

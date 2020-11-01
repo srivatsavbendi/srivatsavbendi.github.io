@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   height:100%;
   padding: 0;
-  background-color: #077187;
+  background-color: #04A777;
 }
 
 @viewport{
@@ -13,7 +13,7 @@ html, body {
 .mountainsDiv{
   margin-top: 10vh;
   margin-bottom: 3.5vh;
-  background-color: #077187;
+  background-color: #04A777;
 }
 .mountains{
   width: 100%;

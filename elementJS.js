@@ -3,13 +3,14 @@ console.log(profileusername);
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyBbwuXool1mmjM1Hf4_Jn7eD_fJV9vcXt0",
-  authDomain: "projectfuture-45211.firebaseapp.com",
-  databaseURL: "https://projectfuture-45211.firebaseio.com",
-  projectId: "projectfuture-45211",
-  storageBucket: "projectfuture-45211.appspot.com",
-  messagingSenderId: "313052135851",
-  appId: "1:313052135851:web:12eecf6ba7701ed76f92ee"
+  apiKey: "AIzaSyB94h7P-9hQe5nsYKRR0dJOYO2azUnBpHs",
+  authDomain: "projectfuture-ec96f.firebaseapp.com",
+  databaseURL: "https://projectfuture-ec96f.firebaseio.com",
+  projectId: "projectfuture-ec96f",
+  storageBucket: "projectfuture-ec96f.appspot.com",
+  messagingSenderId: "924271315084",
+  appId: "1:924271315084:web:ee93bee043fafad85693a9",
+  measurementId: "G-5VYLP4YF2F"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

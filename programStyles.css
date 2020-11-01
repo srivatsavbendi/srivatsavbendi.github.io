@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   height:100%;
   padding: 0;
-  background-color: #52B788;
+  background-color: #04A777;
 }
 
 @viewport{
@@ -12,7 +12,7 @@ html, body {
 
 .mountainsDiv{
   margin-top: 10vh;
-  background-color: #52B788;
+  background-color: #04A777;
 }
 .mountains{
   width: 100%;
@@ -62,9 +62,9 @@ html, body {
 }
 
 #login{
-  background-color: #52B788;
+  background-color: #04A777;
   border: solid;
-  border-color: #52B788;
+  border-color: #04A777;
   color: white;
   padding: 1vh 2.5vw;
   text-align: center;
@@ -76,7 +76,7 @@ html, body {
 }
 
 #login:hover{
-  background-color: #52B788;
+  background-color: #04A777;
   border: solid;
   border-color: white;
   color: white;
@@ -155,7 +155,7 @@ html, body {
 
 .clubinfo:hover{
   color: white;
-  background-color: #52B788;
+  background-color: #04A777;
   font-size: 0.9vw;
   min-width: 20%;
   padding: 0.6vw;
@@ -169,10 +169,10 @@ html, body {
 }
 
 .bookmarksbutton{
-  background-color: #52B788;
+  background-color: #04A777;
   margin-left: 80%;
   border: solid;
-  border-color: #52B788;
+  border-color: #04A777;
   color: white;
   padding: 1vh 2.5vw;
   text-align: center;
@@ -243,7 +243,7 @@ a{
 .btn {
   color: white;
   cursor: pointer;
-  background-color: #52B788;
+  background-color: #04A777;
   font-size: 1.3vw;
   min-width: 15%;
   padding-top: 0.9vw;
@@ -258,7 +258,7 @@ a{
 .btn:hover {
   color: white;
   cursor: pointer;
-  background-color: #52B788;
+  background-color: #04A777;
   font-size: 1.3vw;
   min-width: 15%;
   padding-top: 0.9vw;
@@ -273,7 +273,7 @@ a{
 .btn:focus {
   color: white;
   cursor: pointer;
-  background-color: #52B788;
+  background-color: #04A777;
   font-size: 1.05vw;
   min-width: 10%;
   padding-top: 0.5vw;
@@ -297,12 +297,12 @@ a{
   margin: 0;
   height:100%;
   padding: 0;
-  background-color: #52B788;
+  background-color: #04A777;
   }
 
   .mountainsDiv{
     margin-top: 5vh;
-    background-color: #52B788;
+    background-color: #04A777;
   }
   .mountains{
     width: 100%;
@@ -358,9 +358,9 @@ a{
   }
 
   #signup{
-    background-color: #52B788;
+    background-color: #04A777;
     border: solid;
-    border-color: #52B788;
+    border-color: #04A777;
     color: white;
     padding: 0.5vh 3vw;
     text-align: center;
@@ -373,7 +373,7 @@ a{
   }
 
   #signup:hover{
-    background-color: #52B788;
+    background-color: #04A777;
     border: solid;
     border-color: white;
     color: white;
@@ -454,7 +454,7 @@ a{
 
   .clubinfo:hover{
     color: white;
-    background-color: #52B788;
+    background-color: #04A777;
     font-size: 0.9vw;
     min-width: 20%;
     padding: 0.6vw;
@@ -528,7 +528,7 @@ a{
   .btn {
     color: white;
     cursor: pointer;
-    background-color: #52B788;
+    background-color: #04A777;
     font-size: 1.5vw;
     min-width: 15%;
     padding-top: 0.9vw;
@@ -543,7 +543,7 @@ a{
   .btn:hover {
     color: white;
     cursor: pointer;
-    background-color: #52B788;
+    background-color: #04A777;
     font-size: 1.3vw;
     min-width: 15%;
     padding-top: 0.9vw;

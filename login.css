@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   height:90%;
   padding: 0;
-  background-color: #52B788;
+  background-color: #04A777;
 }
 
 @viewport{
@@ -45,9 +45,9 @@ html, body {
 }
 
 #login{
-  background-color: #52B788;
+  background-color: #04A777;
   border: solid;
-  border-color: #52B788;
+  border-color: #04A777;
   color: white;
   padding: 1vh 2.5vw;
   text-align: center;
@@ -59,7 +59,7 @@ html, body {
 }
 
 #login:hover{
-  background-color: #52B788;
+  background-color: #04A777;
   border: solid;
   border-color: white;
   color: white;
@@ -215,7 +215,7 @@ html, body {
   padding-left: 5%;
   padding-right: 5%;
   font-size: 1.15vw;
-  background-color: #3A7CA5;
+  background-color: #0C1C43;
   border-color: #ffffff;
   border-radius: 5px;
   color: white;
@@ -230,7 +230,7 @@ html, body {
   padding-left: 5%;
   padding-right: 5%;
   font-size: 1.15vw;
-  background-color: #F6AE2D;
+  background-color: #04A777;
   border-color: #ffffff;
   border-radius: 5px;
   color: white;
@@ -246,7 +246,7 @@ html, body {
   padding-left: 5%;
   padding-right: 5%;
   font-size: 1.15vw;
-  background-color: #FF6B6B;
+  background-color: #C52233;
   border-color: #ffffff;
   border-radius: 5px;
   color: white;

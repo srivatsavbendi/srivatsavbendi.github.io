@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   height:100%;
   padding: 0;
-  background-color: #52B788;
+  background-color: #04A777;
 }
 
 @viewport{
@@ -13,7 +13,7 @@ html, body {
 .mountainsDiv{
   margin-top: 10vh;
   margin-bottom: 3.5vh;
-  background-color: #52B788;
+  background-color: #04A777;
 }
 .mountains{
   width: 100%;
@@ -157,12 +157,14 @@ html, body {
 }
 
 .section1header{
+  color: black;
   text-align: right;
   font-size: 2.3vw;
   padding-top: 5vh;
   margin-left: 5vw;
 }
 .section1para{
+  color: black;
   text-align: right;
   font-size: 1.5vw;
   margin-left: 3vw;
@@ -199,11 +201,13 @@ html, body {
 }
 
 .section4header{
+  color: white;
   text-align: left;
   font-size: 2.3vw;
   padding-top: 5vh;
 }
 .section4para{
+  color: white;
   text-align: left;
   font-size: 1.5vw;
 }
@@ -401,7 +405,7 @@ p{
   margin: 0;
   height:100%;
   padding: 0;
-  background-color: #52B788;
+  background-color: #FCF7F8;
   }
 
   #navbar{
@@ -599,6 +603,7 @@ p{
     width: 100%;
     height: 20vh;
     text-align: center;
+    margin-right: 3vh;
   }
   .section4header{
     text-align: left;
