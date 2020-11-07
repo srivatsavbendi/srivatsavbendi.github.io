@@ -16,54 +16,7 @@ var database = firebase.database();
 
 const auth = firebase.auth();
   
-  
-function signUp(){
-  var username = document.getElementById("username");
-  var email = document.getElementById("email");
-  var password = document.getElementById("password");
 
-  usernamenew = username.value;
-  emailnew = email.value;
-  passwordnew = password.value;
-
-  usernamelength = usernamenew.length;
-  passwordlength = passwordnew.length;
-  var ref = firebase.database().ref();
-
-    if (usernamelength<8 || passwordlength<8){
-      alert("Username and password must be 8 characters long");
-    }
-    else{
-      ref.child("users").orderByChild("email").equalTo(emailnew).once("value",snapshot => {
-        if (snapshot.exists()){
-          alert("Email is already in use");
-        }
-        else{
-            ref.child("users").orderByChild("username").equalTo(usernamenew).once("value",snapshot => {
-            if (snapshot.exists()){
-              alert("Username is already in use");
-            }
-            else{
-              alert("Signed Up");
-              firebase.database().ref('users/' + username.value).set({
-                username: username.value,
-                email: email.value,
-                password: password.value, 
-                clubs: "hi",
-                programs: "hi"
-              });
-              window.location = "profile.html";
-            }
-          });
-        }
-      });
-    }
-  };
-
-
-
-  
-  
 function signIn(){
   var username1 = document.getElementById("username1");
   var password1 = document.getElementById("password1");
@@ -84,12 +37,4 @@ function signIn(){
 }
   
 
-  
-  
-function signOut(){
-  auth.signOut();
-  alert("Signed Out");
-  window.location = "index.html";
-}
-  
 

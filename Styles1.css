@@ -36,17 +36,17 @@ html, body {
 
 .title1{
   color: #EEEEF4;
-  margin-left: 30%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 3%;
   font-size: 1.3vw;
   vertical-align: middle;
   height: 0.5vh;
 }
 
 #login{
-  background-color: #52B788;
+  background-color: #04A777;
   border: solid;
-  border-color: #52B788;
+  border-color: #04A777;
   color: white;
   padding: 1vh 2.5vw;
   text-align: center;
@@ -55,10 +55,11 @@ html, body {
   font-size: 1.3vw;
   border-radius: 5px;
   margin-right: 3%;
+  cursor: pointer;
 }
 
 #login:hover{
-  background-color: #52B788;
+  background-color: #04A777;
   border: solid;
   border-color: white;
   color: white;
@@ -69,6 +70,7 @@ html, body {
   font-size: 1.3vw;
   border-radius: 6%;
   margin-right: 3%;
+  cursor: pointer;
 }
 
 

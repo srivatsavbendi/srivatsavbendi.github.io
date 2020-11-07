@@ -2,7 +2,7 @@
 <html>
 	<head>
       <title></title>
-      <link rel="stylesheet" type="text/css" href="login.css">
+      <link rel="stylesheet" type="text/css" href="signup.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
@@ -17,7 +17,6 @@
 	</style>
 	<body>
 
-		
 		<div id=navbar>	
 			<a href="index.html"><span class=title><img id=logo src="Pictures/PROJECTFUTURE1.png"></span></a>
 			<a href="clubs.html"><span class=title>Clubs</span></a>
@@ -35,18 +34,20 @@
 				<img class=signupic src="Pictures/signmountain.png">
 			</div>
 			<div id=infodiv>
-				<h1 class=formtitles>Log In</h1>
-				<input type="email" placeholder="Username" id="username1">
-				<input type="password" placeholder="Password" id="password1">
+				<h1 class=formtitles>Sign Up</h1>
+				<input type="username" placeholder="Username" id="username">
+				<input type="email" placeholder="Email Address" id="email">
+				<input type="password" placeholder="Password" id="password">
 
-				<div id=divsigninout>
-					<button onclick="signIn()" id="signIn"><b>Log In</b></button>
+				<div id=divsign>
+					<button onclick="signUp()" id="signUp"><b>Sign Up</b></button>
 				</div>
+
 			</div>
 			
 		</div>
 
- 		<script src="firebase.js"></script>
+ 		<script src="signupfirebase.js"></script>
 	</body>
 
 </html>

@@ -1,5 +1,4 @@
 var profileusername = sessionStorage.getItem("username");
-console.log(profileusername);
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -47,14 +46,7 @@ bbay.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":bbay";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -68,14 +60,7 @@ clark.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":clark";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -89,14 +74,7 @@ curie.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":curie";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -111,14 +89,7 @@ harvard.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":harvard";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -132,14 +103,7 @@ hcssim.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":hcssim";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -153,14 +117,7 @@ hshsp.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":hshsp";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -174,10 +131,7 @@ leadershipseminars.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":leadershipseminars";
       console.log(programsinfo);
-    
-      firebase.database().ref('users/' + profileusername).set({
-        programs: programsinfo
-      });
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -191,14 +145,7 @@ libarts.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":libarts";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -212,14 +159,7 @@ mites.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":mites";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -233,14 +173,7 @@ mmss.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":mmss";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -254,14 +187,7 @@ rehss.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":rehss";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -275,14 +201,7 @@ ross.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":ross";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -296,14 +215,7 @@ rsi.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":rsi";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -317,14 +229,7 @@ sams.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":sams";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -338,10 +243,7 @@ sumac.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":sumac";
       console.log(programsinfo);
-    
-      firebase.database().ref('users/' + profileusername).set({
-        programs: programsinfo
-      });
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -355,14 +257,7 @@ summerscholars.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":summerscholars";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -376,14 +271,7 @@ tasp.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":tasp";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
@@ -397,18 +285,10 @@ yygs.addEventListener("click", function(){
     } else {
       programsinfo = programs + ":yygs";
       console.log(programsinfo);
-    
-      ref.once("value").then(function(snapshot) {
-        var clubsinfo = snapshot.child("clubs").val();
-        firebase.database().ref('users/' + profileusername).set({
-        clubs: clubsinfo,
-        programs: programsinfo
-        });
-      })
+      firebase.database().ref('users/' + profileusername + '/programs').set(programsinfo);
     }
   })
 })
-
 
 
 filterSelection("all")

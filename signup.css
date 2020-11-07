@@ -89,17 +89,17 @@ html, body {
 #imagediv{
   width: 40%;
   height: 100%;
-  float:left;
+  float:right;
 }
 
 #infodiv{
   width: 60%;
   height: 100%;
-  float: right;
+  float: left;
 } 
 
 .signupic{
-  float: left;
+  float: right;
   max-width:100%;
   max-height:100%;
   overflow: hidden;
@@ -111,7 +111,7 @@ html, body {
   color: #2f3030;
 }
 
-#username1{
+#username{
   font-size: 1.3vw;
   padding: 1vw;
   border-bottom: 1px solid rgba(white, .03);
@@ -121,7 +121,18 @@ html, body {
   width: 60%;
 }
 
-#password1{
+#email{
+  font-size: 1.3vw;
+  margin-top: 2%;
+  padding: 1vw;
+  border-bottom: 1px solid rgba(white, .03);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 60%;
+}
+
+#password{
   font-size: 1.3vw;
   margin-top: 2%;
   padding: 1vw;
@@ -146,32 +157,62 @@ html, body {
   margin-left: 20%;
 }
 
+#signUp{
+  margin-top: 1vw;
+  font-size: 1.3vw;
+  background-color: #2f3030;
+  padding:10px;
+  border:0;
+  border-radius: 10px;
+  color: white;
+  width: 90%;
+  border-style: none;
+  cursor: pointer;
+}
+
+#signUp:hover{
+  margin-top: 1vw;
+  font-size: 1.3vw;
+  background-color: #2f3030;
+  padding:10px;
+  border:0;
+  border-radius: 10px;
+  color: white;
+  width: 90%;
+  border-style: none;
+  cursor: pointer;
+}
+
 #signIn{
-  font-size: 1.3vw;
-  margin-top: 1vw;
-  background-color: #2f3030;
-  padding:10px;
-  border:0;
-  border-radius: 10px;
+  margin-top: 1%;
+  margin-right: 5%;
+  padding-top: 4.5%;
+  padding-bottom: 4.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.15vw;
+  background-color: #04A777;
+  border-color: #ffffff;
+  border-radius: 5px;
   color: white;
-  width: 90%;
-  border-style: none;
-  cursor: pointer;
+  width: 45%;
 }
 
-#signIn:hover{
-  font-size: 1.3vw;
-  margin-top: 1vw;
-  background-color: #2f3030;
-  padding:10px;
-  border:0;
-  border-radius: 10px;
-  color: white;
-  width: 90%;
-  border-style: none;
-  cursor: pointer;
-}
 
+#signOut{
+  margin-top: 1%;
+  margin-left: 5%;
+  padding-top: 4.5%;
+  padding-bottom: 4.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.15vw;
+  background-color: #C52233;
+  border-color: #ffffff;
+  border-radius: 5px;
+  color: white;
+  width: 43%;
+}
 
 a{
   text-decoration: none;
